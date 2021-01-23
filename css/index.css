@@ -37,6 +37,7 @@ h1, p, .name, .bio {
     font-family: 'Raleway', sans-serif;	
     text-align: center;	
     margin: 4%;	
+    color:black
 }	
 h1{
     font-size:6rem;
@@ -67,7 +68,54 @@ img {
 img:hover {	
     opacity: 80%;	
 }	
+@media (max-width:500px){
+    html{
+        font-size:62.5%;
+    }
+    body{
+        font-size:1.6rem;
+        line-height: 1.5;
+        font-family: 'Raleway', sans-serif;	
+    }
+    
+    
+    
+    h1, p, .name, .bio {	
+        font-family: 'Raleway', sans-serif;	
+        text-align: center;	
+        margin: 4%;	
+    }	
+    h1{
+        font-size:6rem;
+        margin:0;
+    }
+    a {	
+        text-decoration: none;	
+        color: black;
+        font-size:2.5rem;	
+    }	
+    a:hover {	
+        font-weight: bold;	
+    }	
+    .name{	
+        font-size: 150%;	
+        font-weight: 200;	
+    }	
+    img {	
+        height:39rem;	
+        object-fit: cover;	
+        display: block;	
+        margin: 2%;	
+        margin-top: 4%;	
+        margin-left: auto;	
+        margin-right: auto;	
+        border-radius: 2%;	
+    }	
+    img:hover {	
+        opacity: 80%;	
+    }
 
+}
 /*HEADER STYLES */
 header{
     display:flex;
@@ -86,7 +134,26 @@ nav span{
     border-left:3px solid #626262;
 
 }
+@media (max-width:500px){
+    header{
+        display:flex;
+        justify-content: center;
+    }
+    nav{
+        width:1.32rem;
+        display:flex;
+        justify-content:space-evenly;
+        margin-top:5%;
+    }
+    nav a{
+        color:#626262;
+    }
+    nav span{
+        border-left:3px solid #626262;
+    
+    }
 
+}
 /*Title Section Styles*/
 .title-container{
     display:flex;
@@ -134,9 +201,10 @@ button:hover{
     .title-container div {	
         background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg');		
         background-position: center;	
-        color: white;	
-        width:100%;
+        color: white;
         display:flex;
+        width:500px;
+        height:350px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -150,6 +218,7 @@ button:hover{
     justify-content: space-around;
     width:80%;
     margin:0 auto;
+
 }
 
 .artist{
@@ -159,3 +228,25 @@ button:hover{
 .artist img{
     width:100%;
 }
+@media (max-width:500px){
+    .artists-container{
+        display:flex;
+        justify-content: space-around;
+        width:250px;
+        
+        margin:0 auto;
+        flex-direction:column
+    }
+    
+    .artist{
+        
+        width:100%;
+        text-align:center;
+    }
+    .artist img{
+        width:100%;
+    }
+
+
+}
+
